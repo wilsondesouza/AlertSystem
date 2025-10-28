@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Tema claro (mantido para fallback, mas vamos focar no dark) */
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 39 100% 50%; /* Laranja #ffa500 */
+        --primary-foreground: 0 0% 100%;
+        --secondary: 195 100% 50%; /* Azul ciano #00bfff */
+        --secondary-foreground: 0 0% 100%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 195 100% 50%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 39 100% 50%;
+        --radius: 0.5rem;
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 39 100% 50%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 195 100% 50%;
+    }
+
+    .dark {
+        /* 🎨 DARK MODE MODERNO - Paleta Personalizada */
+        
+        /* Background principal: #121212 (Material Design Dark) */
+        --background: 0 0% 7%;
+        
+        /* Texto principal: Branco suave para não cansar os olhos */
+        --foreground: 0 0% 95%;
+
+        /* Cards e superfícies elevadas: #1e1e1e */
+        --card: 0 0% 12%;
+        --card-foreground: 0 0% 95%;
+
+        /* Popovers e dropdowns: Um pouco mais claro que cards */
+        --popover: 0 0% 14%;
+        --popover-foreground: 0 0% 95%;
+
+        /* Cor primária: Laranja vibrante #ffa500 */
+        --primary: 39 100% 50%;
+        --primary-foreground: 0 0% 7%; /* Texto escuro no laranja */
+
+        /* Cor secundária: Azul ciano #00bfff */
+        --secondary: 195 100% 50%;
+        --secondary-foreground: 0 0% 7%; /* Texto escuro no azul */
+
+        /* Elementos desativados/muted: Cinza médio */
+        --muted: 0 0% 18%;
+        --muted-foreground: 0 0% 60%;
+
+        /* Accent (destaques): Azul ciano com menos saturação */
+        --accent: 195 80% 45%;
+        --accent-foreground: 0 0% 100%;
+
+        /* Destrutivo (erros, delete): Vermelho suavizado */
+        --destructive: 0 70% 50%;
+        --destructive-foreground: 0 0% 100%;
+
+        /* Bordas: Cinza sutil para não criar muito contraste */
+        --border: 0 0% 20%;
+        
+        /* Inputs: Levemente mais claro que o background */
+        --input: 0 0% 18%;
+        
+        /* Focus ring: Laranja para combinar com o tema */
+        --ring: 39 100% 50%;
+
+        /* 📊 SIDEBAR - Tons mais escuros para hierarquia visual */
+        --sidebar-background: 0 0% 7%; /* Igual ao background */
+        --sidebar-foreground: 0 0% 85%;
+        
+        /* Itens ativos na sidebar: Laranja */
+        --sidebar-primary: 39 100% 50%;
+        --sidebar-primary-foreground: 0 0% 7%;
+        
+        /* Hover na sidebar: Cinza mais claro */
+        --sidebar-accent: 0 0% 15%;
+        --sidebar-accent-foreground: 0 0% 95%;
+        
+        /* Borda da sidebar */
+        --sidebar-border: 0 0% 18%;
+        
+        /* Focus na sidebar */
+        --sidebar-ring: 195 100% 50%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+@layer utilities {
+    /* Spinner SVG stroke utilities */
+    .stroke-linecap-round {
+        stroke-linecap: round;
+    }
+    
+    .stroke-linejoin-round {
+        stroke-linejoin: round;
+    }
+    
+    /* Initial stroke-dasharray for animation */
+    .animate-dash {
+        stroke-dasharray: 360 40;
+        stroke-dashoffset: 0;
+    }
+}
