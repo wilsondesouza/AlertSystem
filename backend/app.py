@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-import db_manager
+from . import db_manager
 import os
 
 # Define o caminho para a pasta dist (frontend build)
