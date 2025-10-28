@@ -1,17 +1,18 @@
-# Alert System
+# Alert System 📬
 
 ---
 
+https://github.com/user-attachments/assets/d3393df8-ee40-43bb-ac14-40bd7c430b4b
 
 ---
 
-## Visão Geral
+## Visão Geral 📝
 
 Sistema completo de monitoramento de sensores com alertas por email. O sistema monitora continuamente leituras de sensores (CPU, RAM, Temperatura, Potência) e envia notificações quando limites configurados são ultrapassados.
 
 ---
 
-## Ferramentas 
+## Ferramentas 🚀
 
 **Vite**
 
@@ -25,7 +26,7 @@ Sistema completo de monitoramento de sensores com alertas por email. O sistema m
 
 ---
 
-## Estruturação
+## Estruturação 🧱
 
 ```
     index.html - HTML entry point
@@ -40,13 +41,13 @@ Sistema completo de monitoramento de sensores com alertas por email. O sistema m
 
 ---
 
-## Arquitetura
+## Arquitetura 🏭
 
 <img alt="Arquitetura" height="506px" width="900px" src="https://i.ibb.co/08D7CQ6/arquitetura-mermaid.png">
 
 ---
 
-## Preparação 
+## Preparação ✏️
 1. Pré-requisitos
 Node.js 18+ e pnpm
 Python 3.8+
@@ -73,7 +74,7 @@ Ative o uso da API para aplicações `non-browser` em `Account->Security`
 `alert_monitor.py`
 - Faça as alterações necessárias no monitor para adequá-lo ao seu banco de dados
 
-### Dependências
+### Dependências 📦
 **Frontend**
 - Instale dependências
 `pnpm i` e/ou `pnpm install`
@@ -90,7 +91,7 @@ Ative o uso da API para aplicações `non-browser` em `Account->Security`
     pip install -r requirements.txt
 ```
 
-### Como Usar
+### Como Usar 🛠️
 1. Abra três terminais (dois com ambiente virtual ativado na pasta `backend` e o outro no diretório raiz do repositório)
 - Primeiro terminal execute o Backend
     ```
@@ -105,7 +106,9 @@ Ative o uso da API para aplicações `non-browser` em `Account->Security`
         pnpm run dev
     ```
 
-#### Dicas
-Adicione estilização global em `src/index.css` ou crie novos arquivos CSS conforme precisar
-Use classes Tailwind para estilizar componentes
+#### Dicas 🧩
+Adicione estilização global em `src/index.css` ou crie novos arquivos CSS conforme precisar.
+
+Use classes Tailwind para estilizar componentes.
+
 Customize o UI modificando a configuração Tailwind (`tailwind.config.ts`)
