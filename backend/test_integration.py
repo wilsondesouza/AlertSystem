@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 try:
     from config import DB_PATH, DB_SOURCE, SMARTLUME_DB_PATH, LOCAL_DB_PATH
-    import db_manager
+    from . import db_manager
 except ImportError as e:
     print(f"❌ Erro ao importar módulos: {e}")
     sys.exit(1)
