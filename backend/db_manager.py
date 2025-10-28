@@ -1,7 +1,7 @@
 import sqlite3
 import os
 from datetime import datetime, timedelta, timezone
-from config import DB_PATH, DB_SOURCE, print_config
+from .config import DB_PATH, DB_SOURCE, print_config
 
 # Mostrar configuração ao inicializar o módulo
 print_config()

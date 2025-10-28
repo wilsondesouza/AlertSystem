@@ -2,7 +2,7 @@ import time
 import requests
 from datetime import datetime, timedelta
 from . import db_manager
-from config import (
+from .config import (
     EMAILJS_SERVICE_ID, 
     EMAILJS_TEMPLATE_ID, 
     EMAILJS_PUBLIC_KEY, 
